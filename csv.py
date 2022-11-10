@@ -1,9 +1,8 @@
-import csv
 import pandas as pd
+import csv
 from datetime import date
-
 with open("./csvfile.csv",'r') as file:
-    reader = csv.reader(file, delimiter = '-')
+    reader = csv.reader(file, delimiter = ":")
     for row in reader:
         print("Output of CSV Data: ")
         print(row)
